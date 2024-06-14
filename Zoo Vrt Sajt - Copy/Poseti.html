@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="Uredi.css">
+<script src="Java.js"></script>
+
+</head>
+<body>
+
+<div class="navbar">
+  <h1 class="NASLOV">ZOOLOŠKI VRT</h1>
+  <nav>
+    <ul class="navlinkovi">
+      <li><a href="https://www.paypal.com/rs/home">DONIRAJ</a></li>
+      <li><a href="Pocetna.html">POČETNA</a></li>
+      <li><a href="galerija.html">NAŠE ŽIVOTINJE</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<h1 class="naslovcic"> ODABERITE VRSTU ULAZNICE: </h1>
+
+
+<div class="slideshowCene">
+  <div class="slide">
+    <h2>Ulaznica za odrasle</h2>
+    <p>Cena: 1000 din.</p>
+  </div>
+  <div class="slide">
+    <h2>Ulaznica za decu</h2>
+    <p>Cena: 500 din.</p>
+  </div>
+  <div class="slide">
+    <h2>Porodična ulaznica</h2>
+    <p>Cena: 3500 din.</p>
+  </div>
+  
+  
+  <a class="pred" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="sled" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+
+
+<div class="forma">
+<h1>REZERVIŠITE VAŠU KARTU: </h1><br><br>
+
+ <form action="/action_page.php">
+  <label for="fname">IME: </label>
+  <input type="text" id="fname" name="firstname" placeholder="Vaše Ime...">
+
+  <label for="lname">PREZIME: </label>
+  <input type="text" id="lname" name="lastname" placeholder="Vaše Prezime...">
+
+  <label for="country">DRŽAVA: </label>
+  <select id="country" name="country">
+    <option value="australia">Australija</option>
+    <option value="canada">Kanada</option>
+    <option value="usa">USA</option>
+	<option value="usa">Srbija</option>
+	<option value="usa">BiH</option>
+	<option value="usa">Grčka</option>
+  </select>
+
+  <input type="submit" value="Submit">
+</form>
+</div>
+
+
+
+
+
+
+</body>
+
+</html>
